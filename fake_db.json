@@ -1,0 +1,92 @@
+{
+  "cashflow": [
+    {
+      "userId": 1,
+      "id": "1",
+      "trxDate": "2022-01-01",
+      "bankFrom": "BCA",
+      "trxType": "Spending",
+      "trxName": "Sewa",
+      "trxVia": "QR",
+      "trxAmount": 100000,
+      "trxNote": "Makan siang warteg"
+    },
+    {
+      "userId": 1,
+      "id": "2",
+      "trxDate": "2022-01-01",
+      "bankFrom": "BCA",
+      "trxType": "Spending",
+      "trxName": "Sewa",
+      "trxVia": "QR",
+      "trxAmount": 100000,
+      "trxNote": "Makan siang warteg"
+    },
+    {
+      "userId": 1,
+      "id": "3",
+      "trxDate": "2022-01-01",
+      "bankFrom": "BCA",
+      "trxType": "Spending",
+      "trxName": "Sewa",
+      "trxVia": "QR",
+      "trxAmount": 100000,
+      "trxNote": "Makan siang warteg"
+    },
+    {
+      "id": 1,
+      "userId": 1,
+      "trxDate": "2024-01-12",
+      "bankFrom": "BCA",
+      "trxType": "SPENDING",
+      "trxName": "MAKAN",
+      "trxVia": "",
+      "trxAmount": "20000",
+      "trxNote": "Sop Ayam Ceker Neo SOHO"
+    },
+    {
+      "id": 1,
+      "userId": 1,
+      "trxDate": "2024-07-03T09:09:12.000Z",
+      "bankFrom": "",
+      "trxType": "",
+      "trxName": "",
+      "trxVia": "",
+      "trxAmount": 0,
+      "trxNote": ""
+    },
+    {
+      "id": 1,
+      "userId": 1,
+      "trxDate": "2024-07-04T09:10:32.000Z",
+      "bankFrom": "BCA",
+      "trxType": "SPENDING",
+      "trxName": "KESEHATAN",
+      "trxVia": "",
+      "trxAmount": "10000",
+      "trxNote": "catatan"
+    },
+    {
+      "id": 1,
+      "userId": 1,
+      "trxDate": "2024-07-03T09:14:09.000Z",
+      "bankFrom": "MANDIRI",
+      "trxType": "SAVING",
+      "trxName": "MARRIED",
+      "trxVia": "",
+      "trxAmount": "5000000",
+      "trxNote": "nabung nikah"
+    },
+    {
+      "id": 1,
+      "userId": 1,
+      "trxDate": "",
+      "bankFrom": "BCA",
+      "trxType": "SPENDING",
+      "trxName": "LAUNDRY",
+      "trxVia": "TF",
+      "trxAmount": "2000",
+      "trxNote": "aduhai"
+    }
+  ]
+}

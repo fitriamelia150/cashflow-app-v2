@@ -1,0 +1,109 @@
+.container {
+    width: 100%;
+    height: 100%;
+    background-color: #828EFF;
+    padding-top: 50px;
+}
+
+.container img {
+    content: url("./../../../public/images/ilustration1.png");
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.form {
+    height: 100%;
+    background-color: #fff;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    padding: 30px 20px;
+}
+
+.form h1 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 1em;
+    margin-bottom: 40px;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+label {
+    font-size: 0.7em;
+    color: #8F8F8F;
+}
+
+input[type="text"] {
+    height: 30px;
+    border: 1px solid #f0f0f0;
+    border-radius: 10px;
+    color: #686666;
+    font-size: 0.6em;
+    padding-left: 15px;
+}
+
+.datePicker {
+    width: 315px;
+}
+
+
+select {
+    height: 30px;
+    border: 1px solid #f0f0f0;
+    border-radius: 10px;
+    background-color: white;
+    color: #686666;
+    font-size: 0.6em;
+    padding-left: 10px;
+}
+
+option {
+    color:  #686666;
+
+}
+
+textarea {
+    padding: 20px;
+    height: 100px;
+    border: 1px solid #f0f0f0;
+    border-radius: 10px;
+    background-color: white;
+    color: #686666;
+    font-size: 0.6em;
+    font-family: 'inter', sans-serif;
+}
+
+button {
+    width: 100%;
+    background-color: #828EFF;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+/* 
+.parallax {
+    
+    background-image: url("./../../../public/images/ilustration1.png");
+  
+    
+    min-height: 500px; 
+  
+    
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  } */
