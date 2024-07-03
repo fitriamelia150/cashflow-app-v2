@@ -72,6 +72,7 @@ body {
   min-width: 375px;
   height: 100vh;
   box-sizing: border-box;
+  font-family: 'inter', sans-serif;
 }
 
 #root {

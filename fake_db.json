@@ -1,92 +1,42 @@
 {
   "cashflow": [
     {
-      "userId": 1,
-      "id": "1",
-      "trxDate": "2022-01-01",
-      "bankFrom": "BCA",
-      "trxType": "Spending",
-      "trxName": "Sewa",
-      "trxVia": "QR",
-      "trxAmount": 100000,
-      "trxNote": "Makan siang warteg"
-    },
-    {
-      "userId": 1,
-      "id": "2",
-      "trxDate": "2022-01-01",
-      "bankFrom": "BCA",
-      "trxType": "Spending",
-      "trxName": "Sewa",
-      "trxVia": "QR",
-      "trxAmount": 100000,
-      "trxNote": "Makan siang warteg"
-    },
-    {
-      "userId": 1,
-      "id": "3",
-      "trxDate": "2022-01-01",
-      "bankFrom": "BCA",
-      "trxType": "Spending",
-      "trxName": "Sewa",
-      "trxVia": "QR",
-      "trxAmount": 100000,
-      "trxNote": "Makan siang warteg"
-    },
-    {
       "id": 1,
       "userId": 1,
-      "trxDate": "2024-01-12",
+      "trxDate": "2024-07-18T02:27:10.000Z",
       "bankFrom": "BCA",
-      "trxType": "SPENDING",
-      "trxName": "MAKAN",
-      "trxVia": "",
-      "trxAmount": "20000",
-      "trxNote": "Sop Ayam Ceker Neo SOHO"
-    },
-    {
-      "id": 1,
-      "userId": 1,
-      "trxDate": "2024-07-03T09:09:12.000Z",
-      "bankFrom": "",
-      "trxType": "",
-      "trxName": "",
-      "trxVia": "",
-      "trxAmount": 0,
-      "trxNote": ""
-    },
-    {
-      "id": 1,
-      "userId": 1,
-      "trxDate": "2024-07-04T09:10:32.000Z",
-      "bankFrom": "BCA",
-      "trxType": "SPENDING",
-      "trxName": "KESEHATAN",
-      "trxVia": "",
-      "trxAmount": "10000",
-      "trxNote": "catatan"
-    },
-    {
-      "id": 1,
-      "userId": 1,
-      "trxDate": "2024-07-03T09:14:09.000Z",
-      "bankFrom": "MANDIRI",
-      "trxType": "SAVING",
+      "bankTo": "HIJRA",
+      "trxType": "BUDGETING",
+      "trxColor": "#05C50D",
       "trxName": "MARRIED",
       "trxVia": "",
       "trxAmount": "5000000",
-      "trxNote": "nabung nikah"
+      "trxNote": "Juli 2024"
     },
     {
-      "id": 1,
+      "id": 2,
       "userId": 1,
-      "trxDate": "",
+      "trxDate": "2024-07-18T02:27:10.000Z",
       "bankFrom": "BCA",
+      "bankTo": "HIJRA",
+      "trxType": "BUDGETING",
+      "trxColor": "#05C50D",
+      "trxName": "TRAVELING",
+      "trxVia": "",
+      "trxAmount": "2000000",
+      "trxNote": "Juli 2024"
+    },{
+      "id": 3,
+      "userId": 1,
+      "trxDate": "2024-07-18T02:27:10.000Z",
+      "bankFrom": "BCA",
+      "bankTo": "HIJRA",
       "trxType": "SPENDING",
-      "trxName": "LAUNDRY",
-      "trxVia": "TF",
-      "trxAmount": "2000",
-      "trxNote": "aduhai"
+      "trxColor": "#C58305",
+      "trxName": "MAKAN",
+      "trxVia": "",
+      "trxAmount": "2000000",
+      "trxNote": "Sop Ayam Neo SOHO"
     }
   ]
 }
