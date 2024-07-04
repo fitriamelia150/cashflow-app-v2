@@ -1,7 +1,8 @@
 import react, { Component , Fragment} from 'react';
 // import Transaction from '../Transaction/Transaction';
 // import Budget from '../Budget/Budget';
-import Cashflow from '../Cashflow/Cashflow';
+// import Cashflow from '../Cashflow/Cashflow';
+import Dashboard from '../Dashboard/Dashboard';
 
 class Home extends Component {
     render(){
@@ -9,7 +10,8 @@ class Home extends Component {
             <Fragment>
                 {/* <Transaction/> */}
                 {/* <Budget/> */}
-                <Cashflow/>
+                {/* <Cashflow/> */}
+                <Dashboard/>
             </Fragment>
         )
     }

@@ -38,5 +38,19 @@
       "trxAmount": "2000000",
       "trxNote": "Sop Ayam Neo SOHO"
     }
+  ],
+  "banks": [
+    {
+      "id": 1,
+      "bankName": "BCA"
+    },
+    {
+      "id": 2,
+      "bankName": "HIJRA"
+    },
+    {
+      "id": 3,
+      "bankName": "BSI"
+    }
   ]
 }
