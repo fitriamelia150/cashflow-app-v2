@@ -10,13 +10,11 @@ class Cashflow extends Component {
     }
 
     getDataFromAPI = () => {
-        axios.get('http://localhost:3030/cashflow')
+        axios.get('http://localhost:3010/cashflow')
         .then((res) => {
             
             this.setState({
-                data: res.data
-            }, () => {
-                console.log(this.state.data);
+                data: (res.data).sort((a, b) => b.id - a.id)
             })
 
         }, (err) => {

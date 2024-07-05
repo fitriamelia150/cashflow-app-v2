@@ -21,13 +21,14 @@ class Budget extends Component {
             trxName: '',
             trxVia: '',
             trxAmount: 0,
-            trxNote: ''
+            trxNote: '',
+            trxColor: '#828EFF'
         }
     }
     
 
     postDataToAPI = () => {
-        axios.post('http://localhost:3030/cashflow', this.state.formBudget)
+        axios.post('http://localhost:3010/cashflow', this.state.formBudget)
         .then((res) => {
             console.log(res.data);
         }, (err) => {
@@ -44,6 +45,10 @@ class Budget extends Component {
         
         // copy semua property dari object formBudget
         let formBudgetNew = {...this.state.formBudget}
+        
+        //set id
+        let timestamp = new Date().getTime();
+        formBudgetNew['id'] = timestamp;
 
         //set property yang berubah
         formBudgetNew[event.target.name] = event.target.value;
@@ -128,6 +133,7 @@ class Budget extends Component {
                                 <option value="ZAKAT">ZAKAT</option>
                                 <option value="MARRIED">MARRIED</option>
                                 <option value="SABUN-BULANAN">SABUN BULANAN</option>
+                                <option value="BENSIN">BENSIN</option>
                             </select>
                         </div>
                         <div className="input-box">

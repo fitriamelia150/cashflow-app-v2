@@ -1,0 +1,6 @@
+.bank {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8em;
+    margin-bottom: 10px;
+}

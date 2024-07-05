@@ -20,13 +20,14 @@ class Transaction extends Component {
             trxName: '',
             trxVia: '',
             trxAmount: 0,
-            trxNote: ''
+            trxNote: '',
+            trxColor: '#C58305'
         }
     }
     
 
     postDataToAPI = () => {
-        axios.post('http://localhost:3030/cashflow', this.state.formTransaction)
+        axios.post('http://localhost:3010/cashflow', this.state.formTransaction)
         .then((res) => {
             console.log(res.data);
         }, (err) => {
@@ -43,6 +44,10 @@ class Transaction extends Component {
         
         // copy semua property dari object formTransaction
         let formTransactionNew = {...this.state.formTransaction}
+        
+        //set id
+        let timestamp = new Date().getTime();
+        formTransactionNew['id'] = timestamp;
 
         //set property yang berubah
         formTransactionNew[event.target.name] = event.target.value;
