@@ -1,4 +1,4 @@
-import react, { Component , Fragment} from 'react';
+import React, { Component , Fragment} from 'react';
 // import Transaction from '../Transaction/Transaction';
 // import Budget from '../Budget/Budget';
 // import Cashflow from '../Cashflow/Cashflow';
