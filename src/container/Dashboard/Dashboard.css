@@ -20,5 +20,19 @@ h1 {
 }
 
 .bank-balance h1 {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
+}
+
+/* .banks {
+    background-color: #f3f3f3;
+    padding: 20px;
+    border-radius: 10px;
+} */
+
+.wallets {
+    
+    background-color: #965f5f;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }

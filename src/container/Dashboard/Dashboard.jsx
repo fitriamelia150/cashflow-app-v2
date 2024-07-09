@@ -2,7 +2,7 @@ import React, { Component} from "react";
 import axios from "axios";
 import './Dashboard.css';
 import { DoughnutChart } from "../../component/chartsComp/chartsComp";
-import BankComp from "../../component/BankComp/BankComp";
+import { BankComp as BankComp, WalletComp as WalletComp } from "../../component/BankComp/BankComp";
 
 
 class Dashboard extends Component {
@@ -16,6 +16,7 @@ class Dashboard extends Component {
             }
         ],
         dataBank: [],
+        dataWallets: [],
         dataCashflow: []
     }
 
@@ -28,7 +29,19 @@ class Dashboard extends Component {
             })
 
         }).catch((err) => {
-            console.log(err)
+            // console.log(err)
+        })
+    }
+
+    getWalletsFromAPI = () => {
+        axios.get('http://localhost:3010/wallets')
+        .then((res) => {
+
+            this.setState({
+                dataWallets: res.data
+            },() => {
+                console.log(this.state.dataWallets)
+            })
         })
     }
 
@@ -90,6 +103,7 @@ class Dashboard extends Component {
     componentDidMount() {
         this.getBanksFromAPI();
         this.getDataFromAPI();
+        this.getWalletsFromAPI();
     }
 
     render() {
@@ -101,12 +115,25 @@ class Dashboard extends Component {
                 </div>
 
                 <div className="bank-balance">
-                <h1>Here's your saldo!</h1>
-                    {
-                        this.state.dataBank.map((data) => {
-                            return <BankComp key={data.id} data={data}/>
-                        })
-                    }
+                    <h1>Banks Balance</h1>
+                    <div className="banks">
+                        {
+                            this.state.dataBank.map((data) => {
+                                return <BankComp key={data.id} data={data}/>
+                            })
+                        }
+                    </div>
+                </div>
+
+                <div className="wallet-balance">
+                    <h1>Wallet Balance</h1>
+                    <div className="wallets">
+                        {
+                            this.state.dataWallets.map((data) => {
+                                return <WalletComp key={data.id} data={data}/>
+                            })
+                        }
+                    </div>
                 </div>
             </div>
         );

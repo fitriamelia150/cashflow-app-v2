@@ -2,7 +2,7 @@ import React, { Component , Fragment} from 'react';
 // import Transaction from '../Transaction/Transaction';
 // import Budget from '../Budget/Budget';
 // import Cashflow from '../Cashflow/Cashflow';
-// import Dashboard from '../Dashboard/Dashboard';
+import Dashboard from '../Dashboard/Dashboard';
 import Main from '../Main/Main';
 
 class Home extends Component {
@@ -12,8 +12,8 @@ class Home extends Component {
                 {/* <Transaction/> */}
                 {/* <Budget/> */}
                 {/* <Cashflow/> */}
-                {/* <Dashboard/> */}
-                <Main/>
+                <Dashboard/>
+                {/* <Main/> */}
             </Fragment>
         )
     }

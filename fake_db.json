@@ -372,13 +372,83 @@
       "userId": 1,
       "id": 2,
       "bankName": "HIJRA",
-      "saldo": 0
+      "saldo": 0,
+      "wallets": [
+        {
+          "id": 1,
+          "userId": 1,
+          "walletName": "KESEHATAN",
+          "balance": 0
+        },
+        {
+          "id": 2,
+          "userId": 1,
+          "walletName": "EMERGENCY",
+          "balance": 0
+        },
+        {
+          "id": 3,
+          "userId": 1,
+          "walletName": "MARRIED",
+          "balance": 0
+        },
+        {
+          "id": 4,
+          "userId": 1,
+          "walletName": "TRAVELING",
+          "balance": 0
+        }
+      ]
     },
     {
       "userId": 1,
       "id": 3,
       "bankName": "BSI",
       "saldo": 0
+    }
+  ],
+  "wallets": [
+    {
+      "id": 1,
+      "userId": 1,
+      "walletName": "KESEHATAN",
+      "balance": 2350500
+    },
+    {
+      "id": 2,
+      "userId": 1,
+      "walletName": "EMERGENCY",
+      "balance": 400000
+    },
+    {
+      "id": 3,
+      "userId": 1,
+      "walletName": "MARRIED",
+      "balance": 3390000
+    },
+    {
+      "id": 4,
+      "userId": 1,
+      "walletName": "TRAVELING",
+      "balance": 1000000
+    },
+    {
+      "id": 5,
+      "userId": 1,
+      "walletName": "BELANJA",
+      "balance": 250000
+    },
+    {
+      "id": 6,
+      "userId": 1,
+      "walletName": "JAJAN",
+      "balance": 250000
+    },
+    {
+      "id": 7,
+      "userId": 1,
+      "walletName": "MAKAN",
+      "balance": 2130000
     }
   ]
 }

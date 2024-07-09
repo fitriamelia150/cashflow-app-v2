@@ -2,7 +2,7 @@ import React from "react";
 import './BankComp.css';
 import {NumericFormat} from 'react-number-format';
 
-const BankComp = (props) => {
+export const BankComp = (props) => {
 
     return (
         <div className="bank">
@@ -12,4 +12,12 @@ const BankComp = (props) => {
     )
 }
 
-export default BankComp;
+export const WalletComp = (props) => {
+
+    return (
+        <div className="wallet">
+            <h2>{props.data.walletName}</h2>
+            <NumericFormat value={props.data.balance} displayType={'text'} thousandSeparator={true} prefix={'Rp'}/>
+        </div>
+    )
+} 
