@@ -16,5 +16,18 @@
 .wallet {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
+    background-color: rgb(153, 207, 253);
+    height: 100px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.wallet h2 {
+    font-size: 0.8em;
+}
+
+.balance {
+    font-size: 1.5em;
+    font-weight: 500;
 }

@@ -70,9 +70,13 @@ code {
 
 body {
   min-width: 375px;
-  height: 100vh;
+  min-height: 100vh;
   box-sizing: border-box;
   font-family: 'inter', sans-serif;
+  padding-top: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-bottom: 30px;
 }
 
 #root {

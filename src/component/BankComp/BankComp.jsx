@@ -15,9 +15,9 @@ export const BankComp = (props) => {
 export const WalletComp = (props) => {
 
     return (
-        <div className="wallet">
+        <div className="wallet" style={{backgroundColor: props.data.color}}>
             <h2>{props.data.walletName}</h2>
-            <NumericFormat value={props.data.balance} displayType={'text'} thousandSeparator={true} prefix={'Rp'}/>
+            <NumericFormat value={props.data.balance} displayType={'text'} thousandSeparator={true} prefix={'Rp'} className="balance"/>
         </div>
     )
 } 

@@ -77,7 +77,7 @@ class Budget extends Component {
         return (
             <Fragment>
                 <div className="container">
-                    <img src="" alt="" />
+                    {/* <img src="" alt="" /> */}
                     <div className="form">
                         <h1>Add your budgetting</h1>
                         <div className="input-box">

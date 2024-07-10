@@ -412,43 +412,50 @@
       "id": 1,
       "userId": 1,
       "walletName": "KESEHATAN",
-      "balance": 2350500
+      "balance": 2350500,
+      "color":"#B2F8B5"
     },
     {
       "id": 2,
       "userId": 1,
       "walletName": "EMERGENCY",
-      "balance": 400000
+      "balance": 400000,
+      "color":"#FFADAD"
     },
     {
       "id": 3,
       "userId": 1,
       "walletName": "MARRIED",
-      "balance": 3390000
+      "balance": 3390000,
+      "color":"#E2C0FE"
     },
     {
       "id": 4,
       "userId": 1,
       "walletName": "TRAVELING",
-      "balance": 1000000
+      "balance": 1000000,
+      "color":"#CFDFFF"
     },
     {
       "id": 5,
       "userId": 1,
       "walletName": "BELANJA",
-      "balance": 250000
+      "balance": 250000,
+      "color":"#FFFBD3"
     },
     {
       "id": 6,
       "userId": 1,
       "walletName": "JAJAN",
-      "balance": 250000
+      "balance": 250000,
+      "color":"#FFAC0B"
     },
     {
       "id": 7,
       "userId": 1,
       "walletName": "MAKAN",
-      "balance": 2130000
+      "balance": 2130000,
+      "color":"#A4E5E9"
     }
   ]
 }

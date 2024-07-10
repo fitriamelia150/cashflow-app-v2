@@ -109,8 +109,15 @@ class Dashboard extends Component {
     render() {
         return (
             <div className="dashboard-container">
-                <h1>Dashboard</h1>
+                
+
+                {/* <div className="tab-btn">
+                    <button className="active-tab">Budgeting</button>
+                    <button>Spending</button>
+                </div> */}
+
                 <div className="chart">
+                    <h1>Dashboard</h1>
                     <DoughnutChart data={this.state.dataChart}/>
                 </div>
 
