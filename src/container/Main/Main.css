@@ -4,24 +4,24 @@
     gap: 40px;
 }
 
-.head-profile {
-    display: flex;
-    align-items: center;
+.profile-label h1 {
+    margin: 0;
 }
 
-.profile-avatar {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    margin-right: 20px;
-    background-color: blue;
+
+.profile-label .label-1 {
+    margin-bottom: 5px;
+    font-size: 0.7em;
+}
+.profile-label .label-2 {
+    font-weight: 600;
 }
 
 .card-saldo {
     /* width: 100%; */
     height: 100px;
-    background-color: #828EFF;
-    border-radius: 20px;
+    background-color: #0516AF;
+    border-radius: 10px;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -35,16 +35,24 @@
     color: white;
 }
 
-.history {
-    padding: 30px;
-}
-
-.history-label {
+.wallet-label {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 10px;
 }
 
-.history-label p {
+.wallet-label p {
     font-size: 0.8em;
     font-weight: 600;
+}
+
+.wallet-label .label-2 {
+    color: #949292;
+}
+
+.wallet-card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
 }

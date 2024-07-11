@@ -1,60 +1,53 @@
 import React, { Component} from "react";
+import { WalletComp } from "../../component/BankComp/BankComp";
 import axios from "axios";
-import CashflowComp from "../../component/CashflowComp/CashflowComp";
 import './Main.css';
 
 class Main extends Component {
 
     state = {
-        data: []
+        dataWallets: []
     }
 
-    getDataFromAPI = () => {
-        axios.get('http://localhost:3010/cashflow')
+    getWalletsFromAPI = () => {
+        axios.get('http://localhost:3010/wallets')
         .then((res) => {
-            
-            this.setState({
-                data: (res.data).sort((a, b) => b.id - a.id)
-            })
 
-        }, (err) => {
-            console.log(err);
+            this.setState({
+                dataWallets: res.data
+            },() => {
+                console.log(this.state.dataWallets)
+            })
         })
     }
 
-    componentDidMount(){
-        this.getDataFromAPI();
+    componentDidMount() {
+        this.getWalletsFromAPI();
     }
 
     render() {
         return (
             <div className="main-container">
-                {/* <div className="head-profile">
-                    <div className="profile-avatar">
-                        <img src="" alt="" />
-                    </div>
-
-                    <h1>Hi, User</h1>
-                </div> */}
 
                 <div className="card-saldo">
                     <h2>Rp. 300,000,000</h2>
                 </div>
 
-                <div className="history-label">
-                    <p>Activities</p>
-                    <p>See All</p>
+                <div className="wallets">
+                    <div className="wallet-label">
+                        <p className="label-1">Wallets Balance</p>
+                        <p className="label-2">See all</p>
+                    </div>
+
+                    <div className="wallet-card">
+                        {
+                            this.state.dataWallets.map((data) => {
+                                return <WalletComp key={data.id} data={data}/>
+                            })
+                        }
+                    </div>
                 </div>
 
-                <div className="history">
-
-                    { 
-                        this.state.data.map(data => {
-                            return <CashflowComp key={data.id} data={data}/>
-                        })
-                    }
-                    
-                </div>
             </div>
         )
     }

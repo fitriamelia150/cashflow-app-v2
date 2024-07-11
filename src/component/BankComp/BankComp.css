@@ -15,19 +15,58 @@
 
 .wallet {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-around;
-    background-color: rgb(153, 207, 253);
-    height: 100px;
+    /* background-color: rgb(153, 207, 253); */
+    /* height: 100px; */
+    width: 110px;
     border-radius: 10px;
     padding: 20px;
+    border: 1px solid #F2F2F2;
+    gap: 20px;
 }
 
 .wallet h2 {
-    font-size: 0.8em;
+    font-size: 0.7em;
 }
 
 .balance {
-    font-size: 1.5em;
+    font-size: 0.8em;
     font-weight: 500;
+}
+
+.wallet .label {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+img {
+    width: 20px;
+    height: 20px;
+}
+
+.KESEHATAN {
+    content: url('./../../../public/images/icons8-health-48.png');
+}
+
+.EMERGENCY {
+    content: url('./../../../public/images/icons8-money-32.png');
+}
+
+.TRAVELING {
+    content: url('./../../../public/images/icons8-traveling-64.png');
+}
+
+.MARRIED {
+    content: url('./../../../public/images/icons8-married-64.png');
+}
+
+.BELANJA {
+    content: url('./../../../public/images/icons8-buy-48.png');
+}
+
+.MAKAN, .JAJAN {
+    content: url('./../../../public/images/icons8-soup-plate-48.png');
 }

@@ -413,14 +413,16 @@
       "userId": 1,
       "walletName": "KESEHATAN",
       "balance": 2350500,
-      "color":"#B2F8B5"
+      "color":"#B2F8B5",
+      "icon":"icons8-health-48.png"
     },
     {
       "id": 2,
       "userId": 1,
       "walletName": "EMERGENCY",
       "balance": 400000,
-      "color":"#FFADAD"
+      "color":"#FFADAD",
+      "icon":"icons8-money-32.png"
     },
     {
       "id": 3,
@@ -434,7 +436,8 @@
       "userId": 1,
       "walletName": "TRAVELING",
       "balance": 1000000,
-      "color":"#CFDFFF"
+      "color":"#CFDFFF",
+      "icon": "icons8-traveling-64.png"
     },
     {
       "id": 5,
