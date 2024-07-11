@@ -15,6 +15,12 @@ const NavLinks = ({isClicked, closeMenu}) => {
                 <li>
                     <Link to="/cashflow" onClick={() => closeMenu()}>Cashflow</Link>
                 </li>
+                <li>
+                    <Link to="/budget" onClick={() => closeMenu()}>Add Budget</Link>
+                </li>
+                <li>
+                    <Link to="/transaction" onClick={() => closeMenu()}>Add Transaction</Link>
+                </li>
             </ul>
         </nav>
     )
