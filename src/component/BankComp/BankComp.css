@@ -24,6 +24,7 @@
     padding: 20px;
     border: 1px solid #F2F2F2;
     gap: 20px;
+    cursor: pointer;
 }
 
 .wallet h2 {
