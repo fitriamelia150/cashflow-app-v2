@@ -1,4 +1,5 @@
 import React, { Component} from "react";
+import { Link } from 'react-router-dom';
 import { WalletComp } from "../../component/BankComp/BankComp";
 import axios from "axios";
 import './Main.css';
@@ -39,13 +40,15 @@ class Main extends Component {
                         <p className="label-2">See all</p>
                     </div>
 
-                    <div className="wallet-card">
-                        {
-                            this.state.dataWallets.map((data) => {
-                                return <WalletComp key={data.id} data={data}/>
-                            })
-                        }
-                    </div>
+                    <Link to="/cashflow-wallet/1" style={{ textDecoration: 'none', color: 'black' }}>
+                        <div className="wallet-card" onClick={() => console.log('clicked')}>
+                            {
+                                this.state.dataWallets.map((data) => {
+                                    return <WalletComp key={data.id} data={data}/>
+                                })
+                            }
+                        </div>
+                    </Link>
                 </div>
 
             </div>

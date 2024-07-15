@@ -6,6 +6,7 @@ import Cashflow from '../Cashflow/Cashflow';
 import Dashboard from '../Dashboard/Dashboard';
 import Main from '../Main/Main';
 import NavBar from '../../component/NavBarComp/NavBarComp';
+import CashflowWallet from '../CashflowWallet/CashflowWallet';
 import './Home.css';
 
 class Home extends Component {
@@ -32,6 +33,7 @@ class Home extends Component {
                             <Route path="/" exact element={<Main/>}/>
                             <Route path="/dashboard" element={<Dashboard/>}/>
                             <Route path="/cashflow" element={<Cashflow/>}/>
+                            <Route path="/cashflow-wallet" element={<CashflowWallet/>}/>
                             <Route path="/budget" element={<Budget/>}/>                        
                             <Route path="/transaction" element={<Transaction/>}/>
                         </Routes>
