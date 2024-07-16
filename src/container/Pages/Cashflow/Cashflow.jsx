@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from "react";
 import axios from "axios";
 import './Cashflow.css';
-import CashflowComp from "../../component/CashflowComp/CashflowComp";
+import CashflowComp from "../../../component/CashflowComp/CashflowComp";
 
 class Cashflow extends Component {
 

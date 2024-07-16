@@ -1,0 +1,12 @@
+.cashflow-wallet {
+    background-color: rgb(31, 127, 211);
+    width: 100%;
+    min-height: 100vh;
+    
+}
+
+.line1 .line2 {
+    width: 50px;
+    height: 5px;
+    background-color: blue;
+}

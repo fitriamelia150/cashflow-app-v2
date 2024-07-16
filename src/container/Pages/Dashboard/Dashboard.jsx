@@ -1,8 +1,8 @@
 import React, { Component} from "react";
 import axios from "axios";
 import './Dashboard.css';
-import { DoughnutChart } from "../../component/chartsComp/chartsComp";
-import { BankComp as BankComp, WalletComp as WalletComp } from "../../component/BankComp/BankComp";
+import { DoughnutChart } from "../../../component/chartsComp/chartsComp";
+import { BankComp as BankComp, WalletComp as WalletComp } from "../../../component/BankComp/BankComp";
 
 
 class Dashboard extends Component {

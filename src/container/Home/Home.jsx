@@ -1,18 +1,25 @@
+//libraries
 import React, { Component , Fragment} from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Transaction from '../Transaction/Transaction';
-import Budget from '../Budget/Budget';
-import Cashflow from '../Cashflow/Cashflow';
-import Dashboard from '../Dashboard/Dashboard';
-import Main from '../Main/Main';
+import { BrowserRouter as Router, Routes, Route, withRouter } from 'react-router-dom';
+
+//pages
+import Transaction from '../Pages/Transaction/Transaction';
+import Budget from '../Pages/Budget/Budget';
+import Cashflow from '../Pages/Cashflow/Cashflow';
+import Dashboard from '../Pages/Dashboard/Dashboard';
+import Main from '../Pages/Main/Main';
 import NavBar from '../../component/NavBarComp/NavBarComp';
-import CashflowWallet from '../CashflowWallet/CashflowWallet';
+import DetailWallet from '../../component/BankComp/DetailWallet/DetailWallet';
+
+//style
 import './Home.css';
 
 class Home extends Component {
+
+
     render(){
         return (
-            <BrowserRouter>
+            <Router>
                 <Fragment>
                     <div className="header">
                         <div id="head-profile" className="head-profile">
@@ -33,7 +40,7 @@ class Home extends Component {
                             <Route path="/" exact element={<Main/>}/>
                             <Route path="/dashboard" element={<Dashboard/>}/>
                             <Route path="/cashflow" element={<Cashflow/>}/>
-                            <Route path="/cashflow-wallet" element={<CashflowWallet/>}/>
+                            <Route path="/detail-wallet/:id" element={<DetailWallet/>}/>
                             <Route path="/budget" element={<Budget/>}/>                        
                             <Route path="/transaction" element={<Transaction/>}/>
                         </Routes>
@@ -41,7 +48,7 @@ class Home extends Component {
 
                 </Fragment>
 
-            </BrowserRouter>
+            </Router>
         )
     }
 }
