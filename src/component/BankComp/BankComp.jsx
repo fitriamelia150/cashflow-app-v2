@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { useNavigate } from "react-router-dom";
 import {NumericFormat} from 'react-number-format';
 import './BankComp.css';
@@ -16,11 +16,10 @@ export const BankComp = (props) => {
 export const WalletComp = (props) => {
 
     const navigate = useNavigate();
+    const data = {id: props.data.walletName};
     
-
-
     return (
-        <div className="wallet" onClick={handleClick}>
+        <div className="wallet" onClick={() => navigate(`/detail-wallet/${props.data.id}`,{state: data})}>
             <div className="label">
                 <h2>{props.data.walletName}</h2>
                 <NumericFormat value={props.data.balance} displayType={'text'} thousandSeparator={true} prefix={'Rp'} className="balance"/>
