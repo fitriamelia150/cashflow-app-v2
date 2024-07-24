@@ -1,22 +1,29 @@
 import React, { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import CashflowComp from "../../CashflowComp/CashflowComp";
+import {WalletComp as WalletComp} from "../../BankComp/BankComp";
 import axios from "axios";
 import './DetailWallet.css';
 
 
 
-const DetailWallet = (props) => {
+const DetailWallet = () => {
     const location = useLocation();
-    const walletName = location.state;
+    const walletName = location.state.id;
 
     const [data, setData] = useState([]);
+    const [wallet, setWallet] = useState([]);
 
     useEffect(() => {
+        console.log(walletName);
+
         const fetchData = async () => {
             try {
-                const response = await axios.get(`http://localhost:3010/cashflow`);
+                const response = await axios.get(`http://localhost:3010/cashflow?trxName=${walletName}`);
                 setData(response.data);
+
+                const response2 = await axios.get(`http://localhost:3010/wallets?walletName=${walletName}`);
+                setWallet(response2.data);
             }catch (error) {
                 console.log(error);
             }
@@ -26,20 +33,20 @@ const DetailWallet = (props) => {
 
     }, []);
 
-    console.log(walletName);
 
     return (
         <div className="cashflow-wallet">
-            <nav>
-                <div className="line1"></div>
-                <div className="line2"></div>
-            </nav>
+            <div className="card-wallet">
+                {wallet.map(data => {
+                    return <WalletComp key={data.id} data={data}/>
+                })}
+            </div>
 
-            <h1>detail Wallet</h1>
-
-            {data.map(data => {
-                return <CashflowComp key={data.id} data={data}/>
-            })}
+            <div className="list">
+                {data.map(data => {
+                    return <CashflowComp key={data.id} data={data}/>
+                })}
+            </div>
 
         </div>
     )

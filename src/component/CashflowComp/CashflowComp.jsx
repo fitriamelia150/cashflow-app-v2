@@ -15,7 +15,7 @@ const CashflowComp = (props) => {
 
                 </div>
                 <div className="label-desc">
-                    <p>{props.data.trxName}</p>
+                    <p>{props.data.trxNote}</p>
                     <span>{date}</span>
                 </div>
             </div>

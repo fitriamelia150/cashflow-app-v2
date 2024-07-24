@@ -13,13 +13,30 @@ export const BankComp = (props) => {
     )
 }
 
-export const WalletComp = (props) => {
+export const WalletsComp = (props) => {
 
     const navigate = useNavigate();
     const data = {id: props.data.walletName};
     
     return (
-        <div className="wallet" onClick={() => navigate(`/detail-wallet/${props.data.id}`,{state: data})}>
+        <div className="wallets" onClick={() => navigate(`/detail-wallet/${props.data.walletName}`,{state: data})}>
+            <div className="label">
+                <h2>{props.data.walletName}</h2>
+                <NumericFormat value={props.data.balance} displayType={'text'} thousandSeparator={true} prefix={'Rp'} className="balance"/>
+            </div>
+
+            <div className="icon"> 
+                {/* <img src={require(`./../../../public/images/${props.data.icon}`)} alt="" className={props.data.walletName}/> */}
+                <img src="" alt="" className={props.data.walletName}/>
+            </div>
+        </div>
+    )
+} 
+
+export const WalletComp = (props) => {
+    
+    return (
+        <div className="wallet" >
             <div className="label">
                 <h2>{props.data.walletName}</h2>
                 <NumericFormat value={props.data.balance} displayType={'text'} thousandSeparator={true} prefix={'Rp'} className="balance"/>

@@ -9,11 +9,11 @@
     border-bottom: 1px solid rgb(211, 211, 211);
 }
 
-.bank h2 , .wallet h2 {
+.bank h2 , .wallets h2 {
     font-weight: 400;
 }
 
-.wallet {
+.wallets {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -27,16 +27,16 @@
     cursor: pointer;
 }
 
-.wallet h2 {
+.wallets h2 {
     font-size: 0.7em;
 }
 
-.balance {
+.wallets .balance {
     font-size: 0.8em;
     font-weight: 500;
 }
 
-.wallet .label {
+.wallets .label {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -70,4 +70,30 @@ img {
 
 .MAKAN, .JAJAN {
     content: url('./../../../public/images/icons8-soup-plate-48.png');
+}
+
+.wallet {
+    /* width: 100%; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(192, 192, 241);
+    height: 100px;
+    padding: 20px;
+    border: 1px solid #F2F2F2;
+    border-radius: 20px;
+}
+
+.wallet .label {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.wallet .label h2 {
+    font-size: 0.8em;
+}
+
+.wallet .label .balance {
+    font-size: 1.5em;
 }

@@ -2,7 +2,7 @@ import React, { Component} from "react";
 import axios from "axios";
 import './Dashboard.css';
 import { DoughnutChart } from "../../../component/chartsComp/chartsComp";
-import { BankComp as BankComp, WalletComp as WalletComp } from "../../../component/BankComp/BankComp";
+import { BankComp as BankComp, WalletsComp as WalletsComp } from "../../../component/BankComp/BankComp";
 
 
 class Dashboard extends Component {
@@ -137,7 +137,7 @@ class Dashboard extends Component {
                     <div className="wallets">
                         {
                             this.state.dataWallets.map((data) => {
-                                return <WalletComp key={data.id} data={data}/>
+                                return <WalletsComp key={data.id} data={data}/>
                             })
                         }
                     </div>
