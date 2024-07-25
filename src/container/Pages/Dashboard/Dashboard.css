@@ -22,18 +22,11 @@ h1 {
     margin-bottom: 50px;
 }
 
-/* .banks {
-    background-color: #f3f3f3;
-    padding: 20px;
-    border-radius: 10px;
-} */
-
-.wallets {
-    
-    /* background-color: #965f5f; */
+.wallets-list {
     display: flex;
-    flex-direction: column;
-    gap: 30px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 .tab-btn {

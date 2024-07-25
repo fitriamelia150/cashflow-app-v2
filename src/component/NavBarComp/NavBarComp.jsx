@@ -1,12 +1,14 @@
-import DesktopNav from "./DesktopNavComp";
-import MobileNav from "./MobileNavComp";
+// import DesktopNav from "./DesktopNavComp";
+// import MobileNav from "./MobileNavComp";
+import NavButton from "./NavButtonComp";
 
 const NavBar = () => {
     return(
-        <div>
-            <DesktopNav/>
-            <MobileNav/>
-        </div>
+        <>
+            {/* <DesktopNav/> */}
+            {/* <MobileNav/> */}
+            <NavButton/>
+        </>
     )
 }
 

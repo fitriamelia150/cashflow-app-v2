@@ -134,7 +134,7 @@ class Dashboard extends Component {
 
                 <div className="wallet-balance">
                     <h1>Wallet Balance</h1>
-                    <div className="wallets">
+                    <div className="wallets-list">
                         {
                             this.state.dataWallets.map((data) => {
                                 return <WalletsComp key={data.id} data={data}/>

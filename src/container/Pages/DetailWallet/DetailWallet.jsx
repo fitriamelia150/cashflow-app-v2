@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import CashflowComp from "../../CashflowComp/CashflowComp";
-import {WalletComp as WalletComp} from "../../BankComp/BankComp";
+import CashflowComp from "../../../component/CashflowComp/CashflowComp";
+import {WalletComp as WalletComp} from "../../../component/BankComp/BankComp";
 import axios from "axios";
 import './DetailWallet.css';
 

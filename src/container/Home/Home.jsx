@@ -9,7 +9,7 @@ import Cashflow from '../Pages/Cashflow/Cashflow';
 import Dashboard from '../Pages/Dashboard/Dashboard';
 import Main from '../Pages/Main/Main';
 import NavBar from '../../component/NavBarComp/NavBarComp';
-import DetailWallet from '../../component/BankComp/DetailWallet/DetailWallet';
+import DetailWallet from '../Pages/DetailWallet/DetailWallet';
 
 //style
 import './Home.css';
@@ -32,7 +32,6 @@ class Home extends Component {
                                 <h1 className="label-2">Fitri Amelia</h1>
                             </div>
                         </div>
-                        <NavBar/>
                     </div>
 
                     <div id="home-container" className="home-container">    
@@ -44,6 +43,10 @@ class Home extends Component {
                             <Route path="/budget" element={<Budget/>}/>                        
                             <Route path="/transaction" element={<Transaction/>}/>
                         </Routes>
+                    </div>
+
+                    <div className="footer">
+                        <NavBar/>
                     </div>
 
                 </Fragment>

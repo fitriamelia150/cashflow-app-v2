@@ -1,4 +1,4 @@
-nav{
+/* nav{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -31,7 +31,7 @@ nav ul li a:hover{
     display: none;
 }
 
-/*NavBar.css*/
+
 
 @media (max-width: 600px){
 
@@ -41,9 +41,7 @@ nav ul li a:hover{
 
     .MobileNavigation{
         display: flex;
-        /* align-items: center; */
         height: 10vh;
-        /* background-color: aquamarine; */
     }
 
     .NavLinks ul{
@@ -79,4 +77,84 @@ nav ul li a:hover{
     }
 
 }
+ */
 
+ .nav-button {
+    width: 100%;
+ }
+
+ .NavLinks {
+    height: 50px;
+    border: 1px solid #f0f0f0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+ ul {
+    list-style: none;
+ }
+
+ li {
+    display: inline;
+    margin-right: 20px;
+ }
+
+ .home-icon {
+    content: url('./../../../public/images/icons8-home-48.png');
+ }
+
+
+ .dashboard-icon {
+    content: url('./../../../public/images/icons8-bar-chart-30.png');
+ }
+
+
+ .cashflow-icon {
+    content: url('./../../../public/images/icons8-list-24.png');
+ }
+
+ .add-icon {
+    content: url('./../../../public/images/icons8-plus-30.png');
+ }
+
+ .card-icon {
+    content: url('./../../../public/images/icons8-card-30.png');
+ }
+
+ .nav {
+    display: flex;
+    /* background-color: rgb(209, 209, 216); */
+    border-radius: 10px;
+    padding: 10px;
+ }
+
+ .nav:focus {
+    background-color: #c8c2ff;
+ }
+
+ .nav:hover {
+    cursor: pointer;
+ }
+
+ .nav-mid {
+    display: flex;
+    background-color: blue;
+    padding: 10px;
+    border-radius: 10px;
+    transform: translateY(-25px);
+ }
+
+ .nav-mid img{
+    width: 30px;
+ }
+
+ .NavLinks .nav img {
+    width: 20px;
+    height: 20px;
+ }
+
+ .selected {
+    background-color: #e5e3f7;
+ }
