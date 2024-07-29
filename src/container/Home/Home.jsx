@@ -10,6 +10,7 @@ import Dashboard from '../Pages/Dashboard/Dashboard';
 import Main from '../Pages/Main/Main';
 import NavBar from '../../component/NavBarComp/NavBarComp';
 import DetailWallet from '../Pages/DetailWallet/DetailWallet';
+import Banks from '../Pages/Banks/Banks';
 
 //style
 import './Home.css';
@@ -21,18 +22,7 @@ class Home extends Component {
         return (
             <Router>
                 <Fragment>
-                    <div className="header">
-                        <div id="head-profile" className="head-profile">
-                            <div className="profile-avatar">
-                                {/* <img src="" alt="" /> */}
-                            </div>
-
-                            <div className="profile-label">
-                                <h1 className="label-1">Hello !</h1>
-                                <h1 className="label-2">Fitri Amelia</h1>
-                            </div>
-                        </div>
-                    </div>
+                    
 
                     <div id="home-container" className="home-container">    
                         <Routes>
@@ -42,6 +32,7 @@ class Home extends Component {
                             <Route path="/detail-wallet/:id" element={<DetailWallet/>}/>
                             <Route path="/budget" element={<Budget/>}/>                        
                             <Route path="/transaction" element={<Transaction/>}/>
+                            <Route path="/banks" element={<Banks/>}/>
                         </Routes>
                     </div>
 

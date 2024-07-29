@@ -90,6 +90,7 @@ nav ul li a:hover{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    z-index: 100;
 }
 
  ul {
@@ -140,7 +141,8 @@ nav ul li a:hover{
 
  .nav-mid {
     display: flex;
-    background-color: blue;
+    background-color: rgb(40, 67, 156);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
     padding: 10px;
     border-radius: 10px;
     transform: translateY(-25px);

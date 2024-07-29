@@ -76,11 +76,11 @@ const NavLinks = ({isClicked, closeMenu}) => {
                 <img src="" alt="dashboard-icon" className='dashboard-icon'/>
             </div>
 
-            <div id="nav-mid" className="nav-mid">
+            <div id="nav-add" className="nav-mid" onClick={() => {navigate('transaction'); clickMenu('add')}}>
                 <img src="" alt="add-icon" className='add-icon'/>
             </div>
 
-            <div id="nav-card" className="nav">
+            <div id="nav-card" className="nav" onClick={() => {navigate('banks'); clickMenu('card')}}>
                 <img src="" alt="card-icon" className='card-icon'/>
             </div>
 

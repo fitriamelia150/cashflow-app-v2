@@ -6,7 +6,7 @@ import './BankComp.css';
 export const BankComp = (props) => {
 
     return (
-        <div className="bank">
+        <div className="bank card-saldo">
             <h2>{props.data.bankName}</h2>
             <NumericFormat value={props.data.saldo} displayType={'text'} thousandSeparator={true} prefix={'Rp'}/>
         </div>

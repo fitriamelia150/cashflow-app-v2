@@ -25,22 +25,37 @@ class Main extends Component {
     componentDidMount() {
         this.getWalletsFromAPI();
 
-        const header = document.querySelector('.header');
-        header.style.display = 'flex';
+        // const header = document.querySelector('.header');
+        // header.style.display = 'flex';
     }
 
-    hideHeader = () => {
-        const header = document.querySelector('.header');
-        console.log(header);
-        header.style.display = 'none';
-    }
+    // hideHeader = () => {
+    //     const header = document.querySelector('.header');
+    //     console.log(header);
+    //     header.style.display = 'none';
+    // }
 
     render() {
         return (
             <div className="main-container">
 
-                <div className="card-saldo">
-                    <h2>Rp. 300,000,000</h2>
+                <div className="header">
+                    <div id="head-profile" className="head-profile">
+                        <div className="profile-avatar">
+                            {/* <img src="" alt="" /> */}
+                        </div>
+
+                        <div className="profile-label">
+                            <h1 className="label-1">Hello !</h1>
+                            <h1 className="label-2">Fitri Amelia</h1>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-saldo">
+                    <p>Your current saldo</p>
+                    <div class="icon"></div>
+                    <p>$ 200.00</p>
                 </div>
 
                 <div className="main-wallet">
@@ -49,7 +64,8 @@ class Main extends Component {
                         <p className="label-2">See all</p>
                     </div>
 
-                    <div className="wallet-card" onClick={this.hideHeader}>
+                    {/* <div className="wallet-card" onClick={this.hideHeader}> */}
+                    <div className="wallet-card">
                         {
                             this.state.dataWallets.map((data) => {
                                 return <WalletsComp key={data.id} data={data}/>

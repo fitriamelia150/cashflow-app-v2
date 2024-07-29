@@ -4,6 +4,26 @@
     gap: 40px;
 }
 
+.head-profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 20px;
+    background-color: rgb(40, 67, 156);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
 .profile-label h1 {
     margin: 0;
 }
@@ -18,21 +38,63 @@
 }
 
 .card-saldo {
-    /* width: 100%; */
-    height: 100px;
-    background-color: #0516AF;
+    width: 100%;
+    height: 200px;
+    background-color: rgb(40, 67, 156);
     border-radius: 10px;
-    padding: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    padding: 50px 20px 60px 20px;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    /* z-index: 1; */
 }
 
-.card-saldo h2 {
-    font-size: 1.5em;
+.card-saldo::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 10px 10px 10px 100%;
+    box-sizing: border-box;
+    opacity: 0.1;
+    /* z-index: 2; */
+}
+
+.card-saldo p {
+    color: #fff;
+    font-weight: 400;
+    z-index: 4;
+}
+
+.card-saldo p:first-child {
+    font-size: 0.7em;
     font-weight: 600;
-    color: white;
+    opacity: 0.5;
+}
+
+.card-saldo p:last-child {
+    font-size: 2.5em;
+    font-weight: 600;
+}
+
+.card-saldo .icon {
+    content: '';
+    width: 80%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 0px 10px 10px 100%;
+    box-sizing: border-box;
+    opacity: 0.1;
+    z-index: 3;
 }
 
 .wallet-label {

@@ -82,7 +82,7 @@ textarea {
 
 button {
     width: 100%;
-    background-color: #828EFF;
+    /* background-color: #828EFF; */
     border: none;
     color: white;
     padding: 15px 32px;
