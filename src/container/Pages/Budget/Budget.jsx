@@ -28,9 +28,9 @@ class Budget extends Component {
     
 
     postDataToAPI = () => {
-        axios.post('http://localhost:3010/cashflow', this.state.formBudget)
+        axios.post('https://cashflow-api-v1.vercel.app/v1/transaction', this.state.formBudget)
         .then((res) => {
-            console.log(res.data);
+            console.log(res.data.data);
         }, (err) => {
             console.log(err);
         })

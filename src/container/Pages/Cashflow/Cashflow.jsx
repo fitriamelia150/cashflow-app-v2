@@ -10,11 +10,11 @@ class Cashflow extends Component {
     }
 
     getDataFromAPI = () => {
-        axios.get('http://localhost:3010/cashflow')
+        axios.get(`https://cashflow-api-v1.vercel.app/v1/transactions?userId=1`)
         .then((res) => {
             
             this.setState({
-                data: (res.data).sort((a, b) => b.id - a.id)
+                data: res.data.data
             })
 
         }, (err) => {
@@ -32,9 +32,11 @@ class Cashflow extends Component {
                 <div className="cashflow-container">
                     <h1>Here's your Cash Flow!</h1>
 
-                    { this.state.data.map(data => {
-                        return <CashflowComp key={data.id} data={data}/>
-                    })}
+                    {this.state.data.length > 0 &&
+                        this.state.data.map(data => {
+                            return <CashflowComp key={data._id} data={data}/>
+                        })
+                    }
                     
                 </div>
             </Fragment>

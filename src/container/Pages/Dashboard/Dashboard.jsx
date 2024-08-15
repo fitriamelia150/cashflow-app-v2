@@ -21,11 +21,11 @@ class Dashboard extends Component {
     }
 
     getBanksFromAPI = () => {
-        axios.get('http://localhost:3010/banks')
+        axios.get('https://cashflow-api-v1.vercel.app/v1/banks')
         .then((res) => {
 
             this.setState({
-                dataBank: res.data
+                dataBank: res.data.data
             })
 
         }).catch((err) => {
@@ -34,11 +34,11 @@ class Dashboard extends Component {
     }
 
     getWalletsFromAPI = () => {
-        axios.get('http://localhost:3010/wallets')
+        axios.get('https://cashflow-api-v1.vercel.app/v1/wallets')
         .then((res) => {
 
             this.setState({
-                dataWallets: res.data
+                dataWallets: res.data.data
             },() => {
                 console.log(this.state.dataWallets)
             })
@@ -46,11 +46,11 @@ class Dashboard extends Component {
     }
 
     getDataFromAPI = () => {
-        axios.get('http://localhost:3010/cashflow')
+        axios.get('https://cashflow-api-v1.vercel.app/v1/transaction')
         .then((res) => {
 
             this.setState({
-                data: res.data
+                data: res.data.data
             },() => {
                 this.genDataChart();
             })
@@ -124,7 +124,7 @@ class Dashboard extends Component {
                 <div className="bank-balance">
                     <h1>Banks Balance</h1>
                     <div className="banks">
-                        {
+                        {this.state.dataBank.length > 0 &&
                             this.state.dataBank.map((data) => {
                                 return <BankComp key={data.id} data={data}/>
                             })
@@ -135,7 +135,7 @@ class Dashboard extends Component {
                 <div className="wallet-balance">
                     <h1>Wallet Balance</h1>
                     <div className="wallets-list">
-                        {
+                        {this.state.dataWallets.length > 0 &&
                             this.state.dataWallets.map((data) => {
                                 return <WalletsComp key={data.id} data={data}/>
                             })

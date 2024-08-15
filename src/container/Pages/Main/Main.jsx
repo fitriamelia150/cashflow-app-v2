@@ -11,11 +11,11 @@ class Main extends Component {
 
 
     getWalletsFromAPI = () => {
-        axios.get('http://localhost:3010/wallets')
+        axios.get('https://cashflow-api-v1.vercel.app/v1/wallets')
         .then((res) => {
 
             this.setState({
-                dataWallets: res.data
+                dataWallets: res.data.data
             },() => {
                 console.log(this.state.dataWallets)
             })
@@ -66,7 +66,7 @@ class Main extends Component {
 
                     {/* <div className="wallet-card" onClick={this.hideHeader}> */}
                     <div className="wallet-card">
-                        {
+                        {this.state.dataWallets.length > 0 &&
                             this.state.dataWallets.map((data) => {
                                 return <WalletsComp key={data.id} data={data}/>
                             })

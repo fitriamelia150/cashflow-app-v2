@@ -1,7 +1,7 @@
 {
   "cashflow": [
     {
-      "id": 1,
+      "id": "1",
       "userId": 1,
       "trxDate": "2024-06-25T02:54:08.000Z",
       "bankFrom": "BCA",
@@ -14,7 +14,7 @@
       "trxColor": "#828EFF"
     },
     {
-      "id": 2,
+      "id": "2",
       "userId": 1,
       "trxDate": "2024-06-25T02:54:08.000Z",
       "bankFrom": "BCA",
@@ -27,7 +27,7 @@
       "trxColor": "#828EFF"
     },
     {
-      "id": 3,
+      "id": "3",
       "userId": 1,
       "trxDate": "2024-06-25T02:54:08.000Z",
       "bankFrom": "BCA",
@@ -40,7 +40,7 @@
       "trxColor": "#828EFF"
     },
     {
-      "id": 4,
+      "id": "4",
       "userId": 1,
       "trxDate": "2024-06-25T02:54:08.000Z",
       "bankFrom": "BCA",
@@ -53,7 +53,7 @@
       "trxColor": "#828EFF"
     },
     {
-      "id": 5,
+      "id": "5",
       "userId": 1,
       "trxDate": "2024-06-25T02:54:08.000Z",
       "bankFrom": "BCA",
@@ -66,7 +66,7 @@
       "trxColor": "#828EFF"
     },
     {
-      "id": 6,
+      "id": "6",
       "userId": 1,
       "trxDate": "2024-06-25T02:54:08.000Z",
       "bankFrom": "BCA",
@@ -79,7 +79,7 @@
       "trxColor": "#828EFF"
     },
     {
-      "id": 7,
+      "id": "7",
       "userId": 1,
       "trxDate": "2024-06-25T02:54:08.000Z",
       "bankFrom": "BCA",
@@ -92,7 +92,7 @@
       "trxColor": "#828EFF"
     },
     {
-      "id": 8,
+      "id": "8",
       "userId": 1,
       "trxDate": "2024-06-25T02:54:08.000Z",
       "bankFrom": "BCA",
@@ -105,7 +105,7 @@
       "trxColor": "#828EFF"
     },
     {
-      "id": 9,
+      "id": "9",
       "userId": 1,
       "trxDate": "2024-06-25T02:54:08.000Z",
       "bankFrom": "BCA",
@@ -118,7 +118,7 @@
       "trxColor": "#828EFF"
     },
     {
-      "id": 10,
+      "id": "10",
       "userId": 1,
       "trxDate": "2024-06-25T02:54:08.000Z",
       "bankFrom": "BCA",
@@ -131,7 +131,7 @@
       "trxColor": "#05C50D"
     },
     {
-      "id": 11,
+      "id": "11",
       "userId": 1,
       "trxDate": "2024-06-25T02:54:08.000Z",
       "bankFrom": "BCA",
@@ -144,7 +144,7 @@
       "trxColor": "#828EFF"
     },
     {
-      "id": 12,
+      "id": "12",
       "userId": 1,
       "trxDate": "2024-06-25T02:54:08.000Z",
       "bankFrom": "BCA",
@@ -157,7 +157,7 @@
       "trxColor": "#828EFF"
     },
     {
-      "id": 13,
+      "id": "13",
       "userId": 1,
       "trxDate": "2024-06-25T03:53:32.000Z",
       "bankFrom": "BCA",
@@ -169,7 +169,7 @@
       "trxColor": "#C58305"
     },
     {
-      "id": 14,
+      "id": "14",
       "userId": 1,
       "trxDate": "2024-06-26T03:53:32.000Z",
       "bankFrom": "BCA",
@@ -181,7 +181,7 @@
       "trxColor": "#C58305"
     },
     {
-      "id": 15,
+      "id": "15",
       "userId": 1,
       "trxDate": "2024-06-26T03:53:32.000Z",
       "bankFrom": "BCA",
@@ -193,7 +193,7 @@
       "trxColor": "#C58305"
     },
     {
-      "id": 16,
+      "id": "16",
       "userId": 1,
       "trxDate": "2024-06-27T03:53:32.000Z",
       "bankFrom": "BCA",
@@ -205,7 +205,7 @@
       "trxColor": "#C58305"
     },
     {
-      "id": 17,
+      "id": "17",
       "userId": 1,
       "trxDate": "2024-06-28T03:53:32.000Z",
       "bankFrom": "BCA",
@@ -217,7 +217,7 @@
       "trxColor": "#C58305"
     },
     {
-      "id": 1720153256493,
+      "id": "1720153256493",
       "userId": 1,
       "trxDate": "2024-06-29T04:15:51.000Z",
       "bankFrom": "BCA",
@@ -229,7 +229,7 @@
       "trxColor": "#C58305"
     },
     {
-      "id": 1720153353684,
+      "id": "1720153353684",
       "userId": 1,
       "trxDate": "2024-06-29T04:15:51.000Z",
       "bankFrom": "BCA",
@@ -241,7 +241,7 @@
       "trxColor": "#C58305"
     },
     {
-      "id": 1720153431732,
+      "id": "1720153431732",
       "userId": 1,
       "trxDate": "2024-06-30T04:15:51.000Z",
       "bankFrom": "BCA",
@@ -253,7 +253,7 @@
       "trxColor": "#C58305"
     },
     {
-      "id": 1720153462112,
+      "id": "1720153462112",
       "userId": 1,
       "trxDate": "2024-06-30T04:15:51.000Z",
       "bankFrom": "BCA",
@@ -265,7 +265,7 @@
       "trxColor": "#C58305"
     },
     {
-      "id": 1720153522182,
+      "id": "1720153522182",
       "userId": 1,
       "trxDate": "2024-07-01T04:15:51.000Z",
       "bankFrom": "-",
@@ -277,7 +277,7 @@
       "trxColor": "#C58305"
     },
     {
-      "id": 1720153565492,
+      "id": "1720153565492",
       "userId": 1,
       "trxDate": "2024-07-01T04:15:51.000Z",
       "bankFrom": "BSI",
@@ -289,7 +289,7 @@
       "trxColor": "#C58305"
     },
     {
-      "id": 1720153608293,
+      "id": "1720153608293",
       "userId": 1,
       "trxDate": "2024-07-01T04:15:51.000Z",
       "bankFrom": "BCA",
@@ -301,7 +301,7 @@
       "trxColor": "#C58305"
     },
     {
-      "id": 1720153640284,
+      "id": "1720153640284",
       "userId": 1,
       "trxDate": "2024-07-01T04:15:51.000Z",
       "bankFrom": "HIJRA",
@@ -313,7 +313,7 @@
       "trxColor": "#C58305"
     },
     {
-      "id": 1720153667964,
+      "id": "1720153667964",
       "userId": 1,
       "trxDate": "2024-07-02T04:15:51.000Z",
       "bankFrom": "BCA",
@@ -325,7 +325,7 @@
       "trxColor": "#C58305"
     },
     {
-      "id": 1720153699538,
+      "id": "1720153699538",
       "userId": 1,
       "trxDate": "2024-07-02T04:15:51.000Z",
       "bankFrom": "BCA",
@@ -337,7 +337,7 @@
       "trxColor": "#C58305"
     },
     {
-      "id": 1720153722880,
+      "id": "1720153722880",
       "userId": 1,
       "trxDate": "2024-07-02T04:15:51.000Z",
       "bankFrom": "BCA",
@@ -349,7 +349,7 @@
       "trxColor": "#C58305"
     },
     {
-      "id": 1720153751106,
+      "id": "1720153751106",
       "userId": 1,
       "trxDate": "2024-07-03T04:15:51.000Z",
       "bankFrom": "BCA",
@@ -359,18 +359,114 @@
       "trxAmount": "24000",
       "trxNote": "Sop Neo SOHO",
       "trxColor": "#C58305"
+    },
+    {
+      "id": 1,
+      "userId": 1,
+      "trxDate": "",
+      "bankFrom": "",
+      "trxType": "",
+      "trxName": "",
+      "trxVia": "",
+      "trxAmount": 0,
+      "trxNote": "",
+      "trxColor": "#C58305"
+    },
+    {
+      "id": 1,
+      "userId": 1,
+      "trxDate": "",
+      "bankFrom": "",
+      "trxType": "",
+      "trxName": "",
+      "trxVia": "",
+      "trxAmount": 0,
+      "trxNote": "",
+      "trxColor": "#C58305"
+    },
+    {
+      "id": 1,
+      "userId": 1,
+      "trxDate": "",
+      "bankFrom": "",
+      "trxType": "",
+      "trxName": "",
+      "trxVia": "",
+      "trxAmount": 0,
+      "trxNote": "",
+      "trxColor": "#C58305"
+    },
+    {
+      "id": 1,
+      "userId": 1,
+      "trxDate": "",
+      "bankFrom": "",
+      "trxType": "",
+      "trxName": "",
+      "trxVia": "",
+      "trxAmount": 0,
+      "trxNote": "",
+      "trxColor": "#C58305"
+    },
+    {
+      "id": 1,
+      "userId": 1,
+      "trxDate": "",
+      "bankFrom": "",
+      "trxType": "",
+      "trxName": "",
+      "trxVia": "",
+      "trxAmount": 0,
+      "trxNote": "",
+      "trxColor": "#C58305"
+    },
+    {
+      "id": 1,
+      "userId": 1,
+      "trxDate": "",
+      "bankFrom": "",
+      "trxType": "",
+      "trxName": "",
+      "trxVia": "",
+      "trxAmount": 0,
+      "trxNote": "",
+      "trxColor": "#C58305"
+    },
+    {
+      "id": 1,
+      "userId": 1,
+      "trxDate": "",
+      "bankFrom": "",
+      "trxType": "",
+      "trxName": "",
+      "trxVia": "",
+      "trxAmount": 0,
+      "trxNote": "",
+      "trxColor": "#C58305"
+    },
+    {
+      "id": 1,
+      "userId": 1,
+      "trxDate": "",
+      "bankFrom": "",
+      "trxType": "",
+      "trxName": "",
+      "trxVia": "",
+      "trxAmount": 0,
+      "trxNote": "",
+      "trxColor": "#C58305"
     }
   ],
   "banks": [
     {
       "userId": 1,
-      "id": 1,
+      "id": "1",
       "bankName": "BCA",
       "saldo": 0
     },
     {
       "userId": 1,
-      "id": 2,
+      "id": "2",
       "bankName": "HIJRA",
       "saldo": 0,
       "wallets": [
@@ -402,63 +498,63 @@
     },
     {
       "userId": 1,
-      "id": 3,
+      "id": "3",
       "bankName": "BSI",
       "saldo": 0
     }
   ],
   "wallets": [
     {
-      "id": 1,
+      "id": "1",
       "userId": 1,
       "walletName": "KESEHATAN",
       "balance": 2350500,
-      "color":"#B2F8B5",
-      "icon":"icons8-health-48.png"
+      "color": "#B2F8B5",
+      "icon": "icons8-health-48.png"
     },
     {
-      "id": 2,
+      "id": "2",
       "userId": 1,
       "walletName": "EMERGENCY",
       "balance": 400000,
-      "color":"#FFADAD",
-      "icon":"icons8-money-32.png"
+      "color": "#FFADAD",
+      "icon": "icons8-money-32.png"
     },
     {
-      "id": 3,
+      "id": "3",
       "userId": 1,
       "walletName": "MARRIED",
       "balance": 3390000,
-      "color":"#E2C0FE"
+      "color": "#E2C0FE"
     },
     {
-      "id": 4,
+      "id": "4",
       "userId": 1,
       "walletName": "TRAVELING",
       "balance": 1000000,
-      "color":"#CFDFFF",
+      "color": "#CFDFFF",
       "icon": "icons8-traveling-64.png"
     },
     {
-      "id": 5,
+      "id": "5",
       "userId": 1,
       "walletName": "BELANJA",
       "balance": 250000,
-      "color":"#FFFBD3"
+      "color": "#FFFBD3"
     },
     {
-      "id": 6,
+      "id": "6",
       "userId": 1,
       "walletName": "JAJAN",
       "balance": 250000,
-      "color":"#FFAC0B"
+      "color": "#FFAC0B"
     },
     {
-      "id": 7,
+      "id": "7",
       "userId": 1,
       "walletName": "MAKAN",
       "balance": 2130000,
-      "color":"#A4E5E9"
+      "color": "#A4E5E9"
     }
   ]
 }

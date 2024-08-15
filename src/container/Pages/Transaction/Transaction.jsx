@@ -13,7 +13,7 @@ class Transaction extends Component {
         startDate: new Date(),
         formTransaction : {
             userId: 1,
-            id: 1,
+            userName:'Amelia',
             trxDate: '',
             bankFrom: '',
             trxType: '',
@@ -27,7 +27,7 @@ class Transaction extends Component {
     
 
     postDataToAPI = () => {
-        axios.post('http://localhost:3010/cashflow', this.state.formTransaction)
+        axios.post('https://cashflow-api-v1.vercel.app/v1/transaction', this.state.formTransaction)
         .then((res) => {
             console.log(res.data);
         }, (err) => {
@@ -46,8 +46,8 @@ class Transaction extends Component {
         let formTransactionNew = {...this.state.formTransaction}
         
         //set id
-        let timestamp = new Date().getTime();
-        formTransactionNew['id'] = timestamp;
+        // let timestamp = new Date().getTime();
+        // formTransactionNew['id'] = timestamp;
 
         //set property yang berubah
         formTransactionNew[event.target.name] = event.target.value;
