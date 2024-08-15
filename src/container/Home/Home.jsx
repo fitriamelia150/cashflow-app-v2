@@ -11,6 +11,8 @@ import Main from '../Pages/Main/Main';
 import NavBar from '../../component/NavBarComp/NavBarComp';
 import DetailWallet from '../Pages/DetailWallet/DetailWallet';
 import Banks from '../Pages/Banks/Banks';
+import AddBank from '../Pages/AddBank/AddBank';
+import AddWallet from '../Pages/AddWallet/AddWallet';
 
 //style
 import './Home.css';
@@ -22,7 +24,6 @@ class Home extends Component {
         return (
             <Router>
                 <Fragment>
-                    
 
                     <div id="home-container" className="home-container">    
                         <Routes>
@@ -33,6 +34,8 @@ class Home extends Component {
                             <Route path="/budget" element={<Budget/>}/>                        
                             <Route path="/transaction" element={<Transaction/>}/>
                             <Route path="/banks" element={<Banks/>}/>
+                            <Route path="/add-wallet" element={<AddWallet/>}/>
+                            <Route path="/add-bank" element={<AddBank/>}/>
                         </Routes>
                     </div>
 

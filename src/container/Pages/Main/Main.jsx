@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { WalletsComp } from "../../../component/BankComp/BankComp";
+import { WalletsComp, BlankWalletComp } from "../../../component/BankComp/BankComp";
 import axios from "axios";
 import './Main.css';
 
@@ -52,9 +52,9 @@ class Main extends Component {
                     </div>
                 </div>
 
-                <div class="card-saldo">
+                <div className="card-saldo">
                     <p>Your current saldo</p>
-                    <div class="icon"></div>
+                    <div className="icon"></div>
                     <p>$ 200.00</p>
                 </div>
 
@@ -70,6 +70,9 @@ class Main extends Component {
                             this.state.dataWallets.map((data) => {
                                 return <WalletsComp key={data.id} data={data}/>
                             })
+                        }
+                        {this.state.dataWallets.length === 0 &&
+                            <BlankWalletComp/>
                         }
                     </div>
                 </div>

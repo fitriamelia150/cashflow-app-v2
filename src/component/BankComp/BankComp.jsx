@@ -48,4 +48,15 @@ export const WalletComp = (props) => {
             </div>
         </div>
     )
-} 
+}
+
+export const BlankWalletComp = () => {
+
+    const navigate = useNavigate();
+
+    return (
+        <div className="add-wallet" onClick={() => navigate('/add-wallet')}>
+            <p>+</p>
+        </div>
+    )
+}
