@@ -4,14 +4,15 @@ import ReactDOM from 'react-dom/client';
 //style
 import './index.css';
 //pages
-import Home from './container/Home/Home';
+// import Home from './container/Home/Home';
+import AllRoute from './config/Routes';
 import reportWebVitals from './reportWebVitals';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Home />
+    <AllRoute />
   </React.StrictMode>
 );
 

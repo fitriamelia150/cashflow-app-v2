@@ -1,9 +1,0 @@
-.cashflow-wallet {
-    /* background-color: rgb(235, 246, 255); */
-    width: 100%;
-    min-height: 100vh;
-    margin-top: 50px;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-}
