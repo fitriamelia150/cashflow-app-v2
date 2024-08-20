@@ -1,0 +1,36 @@
+nav {
+    background-color: rgba(130, 163, 255, 0.534);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px
+}
+
+#nav-menu ul li a{
+    text-decoration: none;
+    color: rgb(34, 34, 34);
+    font-weight: 600;
+    font-size: 1em;
+    margin-left: 20px;
+}
+
+#nav-menu ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#nav-menu {
+    /* background-color: aquamarine; */
+    position: fixed;
+    top: 60px;
+    right: -400px;
+    width: 300px;
+    height: 100vh;
+    padding: 40px 0px 0px 10px;
+    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.2);
+    transition: 0.3s ease-in-out;
+}
+
+#nav-menu.active {
+    right: 0px;
+}

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Input, Option, TextArea } from '../../components';
-import './Transaction.css';
+
 
 const AddCashflow = () => {
   return (
