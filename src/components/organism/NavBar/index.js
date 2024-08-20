@@ -1,7 +1,6 @@
 import React, {useState} from 'react'
 import './Navbar.css'
 import { Logo, Hamburger } from '../../../assets'
-import { lifesciences_v2beta } from 'googleapis';
 const NavBar = () => {
 
   const [click, setClick] = useState(false);
@@ -37,8 +36,8 @@ const NavBar = () => {
 
         <div id='nav-menu' className={click ? '#nav-menu active' : '#nav-menu'}>
           <ul>
-            <li><a href='/#'>Dashboard</a></li>
-            <li><a href='/#'>Cashflow</a></li>
+            <li><a href='/dashboard'>Dashboard</a></li>
+            <li><a href='/add-cashflow'>Cashflow</a></li>
             <li><a href='/#'>Wallet</a></li>
             <li><a href='/#'>Profile</a></li>
             <li><a href='/#'>Logout</a></li>

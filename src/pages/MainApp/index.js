@@ -1,19 +1,26 @@
 import React from 'react'
 import { Routes, Route } from 'react-router-dom';
-import AddCashflow from '../AddCashflow';
+
+// components
 import { NavBar } from '../../components';
+
+//pages
+import Home from '../Home';
+import Dashboard from '../Dashboard';
+import AddCashflow from '../AddCashflow';
 
 const MainApp = () => {
   return (
-    <div>
+    <>
         <NavBar/>
 
         <Routes>
+            <Route path="/" exact element={<Home/>} />
             <Route path="/add-cashflow"  element={<AddCashflow/>} />
+            <Route path="/dashboard" element={<Dashboard/>} />
         </Routes>
         
-        <p>Footer</p>
-    </div>
+    </>
   )
 }
 
