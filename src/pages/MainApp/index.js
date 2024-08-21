@@ -8,6 +8,8 @@ import { NavBar } from '../../components';
 import Home from '../Home';
 import Dashboard from '../Dashboard';
 import AddCashflow from '../AddCashflow';
+import AddBank from '../AddBank';
+import AddWallet from '../AddWallet';
 
 const MainApp = () => {
   return (
@@ -17,6 +19,8 @@ const MainApp = () => {
         <Routes>
             <Route path="/" exact element={<Home/>} />
             <Route path="/add-cashflow"  element={<AddCashflow/>} />
+            <Route path="/add-bank"  element={<AddBank/>} />
+            <Route path="/add-wallet" element={<AddWallet/>} />
             <Route path="/dashboard" element={<Dashboard/>} />
         </Routes>
         

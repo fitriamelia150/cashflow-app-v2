@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import './TextArea.css';
 
 const TextArea = ({label, ...rest}) => {
   return (
@@ -9,4 +10,4 @@ const TextArea = ({label, ...rest}) => {
   )
 }
 
-export default TextArea
+export default TextArea;

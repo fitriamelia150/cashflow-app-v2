@@ -1,0 +1,20 @@
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.input-wrapper .label {
+    font-size: 0.8em;
+    font-weight: 600;
+    color: rgb(75, 75, 75);
+}
+
+.input-wrapper .input {
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid rgb(155, 153, 153);
+    padding: 5px;
+    color: rgb(95, 95, 95);
+}

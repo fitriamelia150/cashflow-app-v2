@@ -1,11 +1,12 @@
-import React from 'react'
+import React from 'react';
+import './Button.css';
 
-const Button = () => {
+const Button = ({label, ...rest}) => {
   return (
-    <div>
-      
-    </div>
+    <>
+      <button className='button-atoms'>{label}</button>
+    </>
   )
 }
 
-export default Button
+export default Button;

@@ -1,0 +1,8 @@
+.input-wrapper .datePicker {
+    width: 96%;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid rgb(155, 153, 153);
+    padding: 5px;
+    color: rgb(95, 95, 95);
+}
